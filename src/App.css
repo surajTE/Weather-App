@@ -1,38 +1,71 @@
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Spinnaker&display=swap');
+
 .App {
-  text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 89vh;
+    font-family: 'Spinnaker', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.inner_div {
+    height: 90vh;
+    width: 80vw;
+    background-color: #fff;
+    border-radius: 2rem;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    display: flex;
+    justify-content: stretch;
+    /* padding: 1rem; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.left_menu {
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.left_menu sup {
+    top: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.left_menu h1 {
+    font-size: 4.7rem;
+    font-family: 'Roboto', sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.right_menu {
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 2rem 2rem 0;
+    background-color: #f6f6f8;
+}
+
+.day_card{ 
+    width: 7vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: rgb(233 233 233) 3px 3px 6px 0px inset, rgb(255 255 255 / 50%) -3px -3px 6px 1px inset;
+}
+
+.highlight_card {
+    width: 17vw;
+    margin: 7px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.highlight_card sub{
+    font-size: 1rem;
 }
